@@ -1,19 +1,20 @@
 # KonradTasks<br>
-// --------- TASK 1 ---------<br>
+
+<h4>// --------- TASK 1 ---------</h4>
 // function which will return given amount of bits with desired shift<br>
 uint32 GetBitsFromUint32(unit32 inputValue, uint8 bitOffset, uint8bitLength);<br>
 //example:<br>
 uint32 res = GetBitsFromUint32(0xABCDEF12, 4, 12);<br>
 // result is: res = 0x00000EF1;<br>
 
-// --------- TASK2 ---------<br>
+<h4>// --------- TASK2 ---------</h4>
 //overload function with const char *:<br>
 uint32 GetBitsFromUint32(const char* inputValue, uint8 bitOffset, uint8 bitLength);<br>
 uint32 res = GetBitsFromStr("0xABCDEF12", 4, 12); // pay attention to quotation!<br>
 // result shall be the same<br>
 // res = 0x00000EF1;<br>
 
-// --------- TASK 3 ---------<br>
+<h4>// --------- TASK 3 ---------</h4>
 // Extract bool vector from overloaded function<br>
 std::vector<bool> GetBitsVector(std::string inputValue);<br>
 std::vector<bool> GetBitsVector(uint32 inputValue);<br>
@@ -26,7 +27,7 @@ std::vector<bool> res = GetBitsVector("0x95");<br>
 // expected result (index 0 = LSB)<br>
 // res = {true, false, true, false, true, false, false, true, ...}<br>
 
-// --------- TASK 4 ---------<br>
+<h4>// --------- TASK 4 ---------</h4>
 // Create Tree class which will be able to generate string trees (like folders structure)<br>
 // example of usage:<br>
 int main(...)<br>
@@ -60,7 +61,7 @@ int main(...)<br>
    delete(root); // deleting root shall remove all children (recursive) and clean memory<br>
 }<br>
 
-// --------- TASK 5 ---------<br>
+<h4>// --------- TASK 5 ---------</h4>
 // Extension of "print" function which will add automatic numbering<br>
 // execution:<br>
 root->print(0, true); // deepth= 0, true = print numbers<br>
@@ -81,13 +82,13 @@ root->Del(1);<br>
 //       1.1. galaz 1.1<br>
 //    2. galaz 3<br>
 
-// ---------------- TASK 6 ---------------<br>
+<h4>// ---------------- TASK 6 ---------------</h4>
 // Develop function, which will show all elements of vector in reverse order without (!) usage of any loops or libraries.<br>
 // input vector: { a,b,c,d,e,f,g,h,i,j }<br>
 // output:<br>
 // j,i,h,g,f,e,d,c,b,a<br>
 
-// ---------------- TASK 7 ----------------<br>
+<h4>// ---------------- TASK 7 ----------------</h4>
 Prepare class / set of functions, which allows serialization and deserialization of binary data, like:<br>
 BitStream->Add(4, &Var0) // adds 4 bits of Var0 to a data stream / buffer<br>
 BitStream->Add(2, &Var1)// adds 2 bits of Var1 to a data stream / buffer<br>
